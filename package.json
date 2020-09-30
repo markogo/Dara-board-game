@@ -1,0 +1,23 @@
+{
+  "name": "icd0006-2019s",
+  "version": "0.0.1",
+  "description": "JS course",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --progress --color"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.cs.ttu.ee/magord/icd0006-2019s.git"
+  },
+  "author": "magord",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

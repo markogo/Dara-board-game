@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es2017",
+        "sourceMap": true,
+
+        // Mandatory
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictBindCallApply": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "forceConsistentCasingInFileNames": true,
+        "alwaysStrict": true,
+
+        // Optional
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "noFallthroughCasesInSwitch": true,
+        "downlevelIteration": true,
+        "importHelpers": true,
+        
+    
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "removeComments": true,
+        "moduleResolution": "node",
+        "lib": [
+            "DOM",
+            "esnext",
+        ]
+    },
+    "include": [
+        "global.d.ts", "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}
