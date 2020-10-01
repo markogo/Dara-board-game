@@ -17,6 +17,7 @@ export const Player2 = {
 
 
 export function startPlayerOne() {
+    controller.gameStart();
     gameBoard.grid().forEach(quadElement => (quadElement as HTMLElement).innerText = '');
     Player1.tokenCount = 12;
     Player2.tokenCount = 12;
@@ -30,6 +31,7 @@ export function startPlayerOne() {
 }
 
 export function startPlayerTwo() {
+    controller.gameStart();
     gameBoard.grid().forEach(quadElement => (quadElement as HTMLElement).innerText = '');
     Player1.ai = false;
     Player2.ai = false;
@@ -42,6 +44,7 @@ export function startPlayerTwo() {
 }
 
 export function startPlayerZero() {
+    controller.gameStart();
     gameBoard.grid().forEach(quadElement => (quadElement as HTMLElement).innerText = '');
     Player1.tokenCount = 12;
     Player2.tokenCount = 12;

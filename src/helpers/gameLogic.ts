@@ -343,7 +343,7 @@ export function onDragOver(event: any) {
 
 const endGame = () => { 
     let winner = (players.Player1.tokenCount > players.Player2.tokenCount) ? '1':'2';
-    alert(`Game over!!!\nPlayer ${winner} wins!!!\n \n The page will now reload!`);
+    alert(`Game over!!!\n \nPlayer ${winner} wins!\n \nThe page will now reload!`);
     players.Player1.ai = false; players.Player2.ai = false; 
     players.displayGamePhase();
     gameBoard.grid().forEach((quadElement) => {
@@ -352,5 +352,5 @@ const endGame = () => {
         quadElement.removeEventListener('drop', onDrop);
     })
     gameBoard.updateGridColors();
-    location.reload();
+    controller.resetGame();
 }

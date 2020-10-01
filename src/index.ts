@@ -32,8 +32,24 @@ export function clickFn(event: any) {
     }
 }
 
+export function resetGame() {
+    location.reload()
+}
+
 export function disableListeners() {
     gameBoard.grid().forEach(quadElement => quadElement.removeEventListener('click', clickFn));
+}
+
+export function gameStart() {
+    utilities.getElementById("reset").removeAttribute("disabled");
+    utilities.getElementById("1player").setAttribute("disabled", "true");
+    utilities.getElementById("2player").setAttribute("disabled", "true");
+    utilities.getElementById("0player").setAttribute("disabled", "true");
+
+    utilities.getElementById("rd1").setAttribute("disabled", "true");
+    utilities.getElementById("rd2").setAttribute("disabled", "true");
+
+    utilities.getElementById('reset').addEventListener('click', resetGame);
 }
 
 export function makeElementsDraggable() {
