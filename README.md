@@ -1,6 +1,6 @@
 # Dara board game
 
-## Desctiption
+## Description
 
 The game has 1-player, 2-player and also simple AI vs AI game modes to choose from.
 <br>
